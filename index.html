@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>Task 3 - Continental Hotel Reservation Form</title>
+    <!-- Linking external style sheet as shown in slides -->
+    <link rel="stylesheet" href="task3.css">
+  </head>
+  <body>
+
+    <h1>Continental Hotel Reservation Form</h1>
+
+    <!-- Form syntax using table alignment structure from slides -->
+    <form action="/action_page.php">
+      <table align="center">
+        <tr>
+          <th>Name</th>
+          <td><input type="text" id="fname" name="fname" value="Enter your name"></td>
+        </tr>
+        <tr>
+          <th>eMail</th>
+          <td><input type="text" id="email" name="email" value="info@continental.pk"></td>
+        </tr>
+        <tr>
+          <th>Mobile No</th>
+          <td><input type="text" id="mobile" name="mobile" value="Enter your cell number"></td>
+        </tr>
+        <tr>
+          <th>Arrival Time</th>
+          <td><input type="text" id="arrival" name="arrival" value="Enter your arrival time"></td>
+        </tr>
+        <tr>
+          <th>Departure</th>
+          <td>
+            <input type="text" name="dep_date">
+            <input type="text" name="dep_time">
+          </td>
+        </tr>
+        <tr>
+          <th>Room Type</th>
+          <td>
+            <input type="radio" name="room" value="single"> Single
+            <input type="radio" name="room" value="double"> Double <br>
+            <input type="radio" name="room" value="presidential"> Presidential Suite
+          </td>
+        </tr>
+        <tr>
+          <th>Preferences</th>
+          <td>
+            <input type="checkbox" name="pref1" value="smoking"> Non-Smoking <br>
+            <input type="checkbox" name="pref2" value="internet"> Internet <br>
+            <input type="checkbox" name="pref3" value="mattress"> Firm Mattress
+          </td>
+        </tr>
+        <tr>
+          <th>Mode of Payment</th>
+          <td>
+            <input type="checkbox" name="pay1" value="cash"> Cash
+            <input type="checkbox" name="pay2" value="check"> Check <br>
+            <input type="checkbox" name="pay3" value="card"> Credit Card
+            <!-- Dropdown matching slides format -->
+            <select id="cars" name="cars">
+              <option value="">Select Card</option>
+              <option value="visa">Visa</option>
+              <option value="master">MasterCard</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <!-- Colspan used to merge the submit row as taught in tables slide -->
+          <td colspan="2" style="text-align: center;">
+            <input type="submit" value="Send Data">
+          </td>
+        </tr>
+      </table>
+    </form>
+
+  </body>
+</html>

@@ -1,0 +1,20 @@
+/* External CSS matching slide styling rules */
+body {
+  background-color: lightgray;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+}
+
+table {
+  background-color: powderblue;
+  border: 2px solid black;
+  width: 500px;
+}
+
+th {
+  text-align: right;
+  font-weight: bold;
+}
